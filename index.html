@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Work+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counselling Guru</title>
+</head>
+
+<body>
+    <section class="hero" id="hero">
+        <div class="nav headingtext">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li style="cursor: pointer;"><a onclick="scrollWin()">About Me</a></li>
+                <li><a href="#contactme">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="headingtext" style="color:white;font-size:4vw;padding: 5vh 1vw;">I am Archana Agarwal</p>
+            <p class="normaltext" style="color:white;text-align: center;font-size:1.3vw;letter-spacing: 5px;">A relationship counsellor</p>
+        </div>
+    </section>
+
+
+    <section class="aboutme" id="aboutme" style="height:70vh;">
+        <div class="aboutcontainer">
+            <div style="width:70vw;height:70vh;;display:flex;justify-content:center;align-items:center;">
+                <p class="normaltext" style="width:50vw;margin:4vh 1vw;padding: 2vh 2vw;text-align: justify;font-size:1.5vw;border: black solid 1px;">I am a relationship counseling expert, I have done Masters in Psychology and Sociology.<br>Counselling is a form of 'talk therapy'. It is a process where an individual, couple or family meet with a trained professional counsellor to talk about issues and problems that they are facing in their lives. Counselling can help people to gain clarity surrounding issues.</p>
+            </div>
+            <div class="picture" style="width:30vw;height:70vh;;display:flex;justify-content:center;align-items:center;">
+                <img src="images/facepicture.jpg" style="border-radius: 10vw;width: 20vw;margin:4vh 1vw;"> 
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contactme" style="height:60vh;display:flex;justify-content:flex-start;flex-direction:column;">
+        <div>
+            <p class="headingtext" style="font-size:4vw;margin-top: 10vh;padding:1vh 2vw">Get in touch</p>
+
+            <div style="margin: 6vh 0vw;display:flex;align-items:center;padding:1vh 2vw;">
+                <form action="https://formsubmit.co/archanaagra008@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://isharamteke.netlify.app/#contact">
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <input type="hidden" name="_autoresponse" value="Thank You for contacting us">
+                    
+                    <div class="input">
+                        <input type="text" name="name" placeholder="Full name*" required class="input-field">
+                    </div>
+                    
+                    <div class="input">
+                        <input type="email" name="email" placeholder="Email*" required class="input-field">
+                    </div>
+                
+                    <div class="input">
+                        <input type="text" name="message" placeholder="Message*" required class="input-field extra">
+                    </div>
+
+                    <div class="input">
+                        <button type="submit" class="submit-button">Submit</button>
+                    </div>
+            </div>
+        
+        </div>
+
+    </section>
+
+    <section style="background:black;height:40vh;display:flex;justify-content:center;align-items:center;flex-direction: column;">
+        <div style="text-align:center">
+            <p class="headingtext" style="font-size:2.5vw;color:rgb(241, 241, 241);margin:10px;">Get Counselling Now</p>
+            <p class="normaltext" style="font-size:1vw;color:rgb(241, 241, 241);">Subscribe my channel for last updates</p>
+        </div>        
+        <div style="width:140px;height: 80px;background:white;margin: 7vh 5vw;display:flex;justify-content:center;align-items:center;">
+            <p class="headingtext" style="color: rgb(15, 15, 15);text-align: center;">Subscribe<br>Now</p>
+        </div>
+        <ul style="display:flex;list-style-type: none;">
+            <li><a href="https://www.youtube.com/channel/UCVv--s11NApQ6sjvY0tndUQ" target="new"><div class="media-circle"><i class="fa fa-youtube-play" style="font-size:1.3vw;color:rgb(241, 241, 241);padding: 1vh 0.5vw"></i></div></a></li>
+            <li><a href="https://www.instagram.com/counselling_guru/" target="new"><div class="media-circle"><i class="fa fa-instagram" style="font-size:1.3vw;color:rgb(241, 241, 241);padding: 1vh 0.5vw"></i></div></a></li>
+            <li><a href="https://www.facebook.com/Archana-Agarwal-114553163681211" target="new"><div class="media-circle" target="new"><i class="fa fa-facebook-f" style="font-size:1.3vw;color:rgb(241, 241, 241);padding: 1vh 0.5vw"></i></div></a></li>
+            <li><a href="#twitter"><div class="media-circle" target="new"><i class="fa fa-twitter" style="font-size:1.3vw;color:rgb(241, 241, 241);padding: 1vh 0.5vw"></i></div></a></li>
+        </ul>
+        <p class="headingtext" style="position:relative; color:rgb(241, 241, 241);font-size:1vw;padding:10px">Archana Agarwal</p>
+    </section>
+
+    <script>
+        function scrollWin() {
+          window.scrollTo(0,740);
+        }
+        </script>
+    
+</body>
+</html>
