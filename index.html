@@ -105,12 +105,13 @@
     <script>
         count=0;
         function dropdown(){
-            if(count%2==0)
+            var x=window.innerWidth;
+            if(count%2==0 && x<1000)
             {
                 document.getElementById("list").style.display="flex";
                 document.getElementById("nav").style.height ="30vh";
             }
-            else
+            else if(count%2!=0 && x<1000)
             {
                 document.getElementById("list").style.display="none";
                 document.getElementById("nav").style.height="7vh";
@@ -118,11 +119,25 @@
             count++;
         }
         function listclick(){
-            document.getElementById("menu").click();
-            
+            var x=window.innerWidth;
+            if(x<1000)
+                document.getElementById("menu").click();
         }
-        
-        
+    </script>
+    <script>
+        function check(){
+            var x=window.innerWidth;
+            if(x>1000)
+           {
+               document.getElementById("nav").style.height="10vh";
+               document.getElementById("list").style.display="flex";
+           }
+           else{
+               document.getElementById("nav").style.height="7vh";
+               document.getElementById("list").style.display="none";
+           } 
+        }
+        window.addEventListener("resize", check);
     </script>
     
 </body>
